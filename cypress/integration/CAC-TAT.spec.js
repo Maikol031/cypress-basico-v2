@@ -149,7 +149,7 @@ describe('Central de Atendimento ao Cliente', function(){
         })
     })
 
-    it.only('Verifica que a politica de privaciade abra em outra aba sem a necessidade de um clique', ()=>{
+    it('Verifica que a politica de privaciade abra em outra aba sem a necessidade de um clique', ()=>{
         cy.get('#privacy a').should('have.attr', 'target', '_blank')
     })
 
